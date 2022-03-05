@@ -16,6 +16,8 @@ services:
   whoami:
     image: containous/whoami:latest
     container_name: whoami
+    ports:
+      - "8888:80"
     restart: always
     labels:
       - "traefik.enable=true"
