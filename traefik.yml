@@ -1,0 +1,13 @@
+api:
+    insecure: true
+
+entryPoints:
+    http:
+      address: :80
+    whoami:
+      address: :8888
+
+providers:
+  docker:
+    exposedByDefault: false
+
